@@ -1,0 +1,44 @@
+bn@bn-System-Product-Name:~/test$ ./testm
+The result of BN_hex2bn is:
+	result=64
+The n hex is:
+	n-hex=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
+Private-Key: (256 bit)
+priv:
+    00:fa:b2:4c:f4:a2:f9:4f:0f:a0:cd:31:bb:e6:fe:
+    3b:69:f9:ed:fd:55:4d:2f:f6:0d:38:47:79:95:57:
+    80:90:5e
+pub: 
+    04:c8:7f:66:de:d9:68:e5:e6:aa:4e:04:78:ba:15:
+    c3:87:96:34:bb:cd:d4:0d:6b:79:71:a0:d8:d2:72:
+    3f:6e:df:5d:51:19:4e:44:35:2d:39:e3:cd:f9:94:
+    26:bd:4e:78:09:4a:5d:e3:dc:fe:62:78:6b:22:f5:
+    f7:67:39:51:5c
+Field Type: prime-field
+Prime:
+    00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:
+    ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:fe:ff:
+    ff:fc:2f
+A:    0
+B:    7 (0x7)
+Generator (uncompressed):
+    04:79:be:66:7e:f9:dc:bb:ac:55:a0:62:95:ce:87:
+    0b:07:02:9b:fc:db:2d:ce:28:d9:59:f2:81:5b:16:
+    f8:17:98:48:3a:da:77:26:a3:c4:65:5d:a4:fb:fc:
+    0e:11:08:a8:fd:17:b4:48:a6:85:54:19:9c:47:d0:
+    8f:fb:10:d4:b8
+Order: 
+    00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:
+    ff:fe:ba:ae:dc:e6:af:48:a0:3b:bf:d2:5e:8c:d0:
+    36:41:41
+Cofactor:  1 (0x1)
+Signature:
+	r=02E06FE730174596508D6865A5BEA66DB90C067A8DE35A367A9F78BB7B98BCC5
+	s=D19AA6C66BCAEDF7BB85217382A4FA7B9A76B8F40449440C3598FE4DC4634A7D
+The Num n:
+	n=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
+Signature:
+	r=02E06FE730174596508D6865A5BEA66DB90C067A8DE35A367A9F78BB7B98BCC5
+	-s=2E65593994351208447ADE8C7D5B0583203823F2AAFF5C2F8A39603F0BD2F6C4
+Verified OK
+Verified OK

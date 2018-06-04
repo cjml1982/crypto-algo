@@ -1,0 +1,24 @@
+#
+# Copyright(C) NELDTV Corporation, 2011-2020.
+# version 1.0.8
+#1)Remove the Printinfos in the case of inputing NULL buffer data  or zero data length  when use EVP_DigestUpdate 
+#2)Close the others digest algs(except the sha1 and sha256) of NELDTV hardware module which do not be tested yet  
+#3)Reserve the software and hardware application api, meanwhile, modified the source code so that app can use openssl api directly (#should open device first using NELDTV_open_cryptodev() in hardware computing  OR close device first using NELDTV_close_cryptodev in# openssl software computing )#  
+#4)Add the tests.c and tests_speed.c to test functionality and performance using openssl api derectly
+#
+#
+#
+#
+#
+#HISTORY version 1.0.7  
+# 1) Fixed shared library BUG. there are all local text for added interfaces when we have not add interface name to openssl.ld.
+# 2) ADD RSA_public_encrypt_software and RSA_private_decrypt_software interfaces.
+#
+# HOW TO TEST 
+# 1) using static library
+# #$ gcc -o testm tests.c ./libcrypto.a -ldl -I./include -L./
+
+# 2) using shared library
+#	#$ EXPORT LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH    //looking libcrypto from this path first
+# #$ gcc -o testm tests.c -lcrypto -ldl -I./include -L./
+# #$ ldd testm     //check link library is our library 
